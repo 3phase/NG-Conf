@@ -1,0 +1,43 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.column-layout {
+  align-items: stretch;
+  padding: 32px;
+  flex: 1 1 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.row-layout {
+  align-items: center;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  font-size: 24px;
+}
+.combo {
+  height: max-content;
+  min-width: min-content;
+}
+.link {
+  margin: 0 0 0 8px;
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+  color: var(--igx-grays-900);
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

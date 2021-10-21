@@ -1,0 +1,27 @@
+<div class="row-layout row">
+  <igx-grid [data]="northwindEmployees" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" displayDensity="cosy" primaryKey="employeeID" class="grid">
+    <igx-column field="employeeID" header="employeeID" title="employeeID" dataType="number" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="lastName" header="lastName" title="lastName" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="firstName" header="firstName" title="firstName" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="title" header="title" title="title" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="titleOfCourtesy" header="titleOfCourtesy" title="titleOfCourtesy" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="birthDate" header="birthDate" title="birthDate" dataType="date" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="hireDate" header="hireDate" title="hireDate" dataType="date" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.street" header="street" title="address.street" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.city" header="city" title="address.city" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.region" header="region" title="address.region" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.postalCode" header="postalCode" title="address.postalCode" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.country" header="country" title="address.country" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="address.phone" header="phone" title="address.phone" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="notes" header="notes" title="notes" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="reportsTo" header="reportsTo" title="reportsTo" dataType="number" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-column field="avatarUrl" header="avatarUrl" title="avatarUrl" dataType="string" [sortable]="true" [groupable]="true"></igx-column>
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+        <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+      </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+  </igx-grid>
+</div>

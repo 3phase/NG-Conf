@@ -1,0 +1,24 @@
+<div class="column-layout column">
+  <div class="row-layout row">
+    <igx-icon font="material" [active]="true" class="icon">lock</igx-icon>
+  </div>
+  <button igxButton="raised" [disabled]="false" class="button">
+    <span>Google Sign in</span>
+  </button>
+  <div class="column-layout_1 column">
+    <igx-input-group type="border" class="input-group">
+      <label igxLabel for="inputField">Label/Placeholder</label>
+      <input type="text" name="inputField" [required]="false" [disabled]="false" igxInput />
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel for="inputField">Password</label>
+      <input type="password" name="inputField" [required]="false" [disabled]="false" igxInput />
+    </igx-input-group>
+    <button igxButton="raised" [disabled]="false" class="user-input">
+      <span>Sign in with Email</span>
+    </button>
+    <button igxButton="outlined" [disabled]="false" class="user-input">
+      <span>Create an account</span>
+    </button>
+  </div>
+</div>

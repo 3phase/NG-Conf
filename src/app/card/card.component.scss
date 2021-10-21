@@ -1,0 +1,49 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.row-layout {
+  flex-wrap: wrap;
+  overflow: auto;
+  position: relative;
+  padding: 16px;
+  flex: 1 1 0;
+  background-color: var(--igx-grays-200);
+  min-height: 50px;
+  align-items: stretch;
+  min-width: 50px;
+}
+.card {
+  min-width: 320px;
+  flex: 0 0 auto;
+  margin: 16px;
+  width: 320px;
+  height: max-content;
+}
+.actions {
+  min-height: 40px;
+  min-width: 50px;
+}
+.content {
+  min-height: 50px;
+  min-width: 50px;
+}
+.row-layout_1 {
+  min-height: max-content;
+  justify-content: space-between;
+  align-items: stretch;
+  min-width: 50px;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+  white-space: pre-wrap;
+}
+.button {
+  height: max-content;
+  min-width: min-content;
+}
+.row {
+  display: flex;
+}

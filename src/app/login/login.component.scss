@@ -1,0 +1,60 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-layout {
+  padding: 32px;
+  width: 500px;
+  max-width: 350px;
+  border-color: var(--igx-grays-600);
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.column-layout_1 {
+  padding: 16px 0 0;
+  margin: 16px 0 0;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.row-layout {
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  font-size: 48px;
+}
+.button {
+  margin: 32px 0 0;
+  height: max-content;
+  min-width: min-content;
+}
+.user-input {
+  margin: 16px 0 0;
+  height: max-content;
+  min-width: min-content;
+}
+.input-group {
+  height: max-content;
+  min-width: min-content;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,35 @@
+<div class="row-layout row">
+  <igx-card type="elevated" *ngFor="let item of northwindEmployees" class="card">
+    <igx-card-header>
+      <h3 igxCardHeaderTitle>Bitcoin</h3>
+      <h5 igxCardHeaderSubtitle>BTC</h5>
+      <igx-avatar [src]="item.avatarUrl" [roundShape]="true" size="medium"></igx-avatar>
+    </igx-card-header>
+    <igx-card-content class="content">
+      <div class="row-layout_1 row">
+        <p class="igx-typography__caption text">Price</p>
+        <p class="igx-typography__overline text">{{ item.address.postalCode }}</p>
+      </div>
+      <div class="row-layout_1 row">
+        <p class="igx-typography__caption text">Rank</p>
+        <p class="igx-typography__overline text">{{ item.address.country }}</p>
+      </div>
+      <div class="row-layout_1 row">
+        <p class="igx-typography__caption text">Proof point</p>
+        <p class="igx-typography__overline text">{{ item.birthDate }}</p>
+      </div>
+      <div class="row-layout_1 row">
+        <p class="igx-typography__caption text">Market Cap</p>
+        <p class="igx-typography__overline text">{{ item.address.city }}</p>
+      </div>
+    </igx-card-content>
+    <igx-card-actions class="actions">
+      <button igxButton="flat" [disabled]="false" class="button">
+        <span>View chart</span>
+      </button>
+      <button igxButton="icon" type="icon" [disabled]="false">
+        <igx-icon>add_circle</igx-icon>
+      </button>
+    </igx-card-actions>
+  </igx-card>
+</div>

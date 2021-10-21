@@ -1,0 +1,37 @@
+<igx-navbar class="navigation-bar">
+  <button igxButton="icon" type="icon" [disabled]="false" igxNavbarAction [igxToggleAction]="navigationDrawer">
+    <igx-icon>menu</igx-icon>
+  </button>
+  <div igxNavbarTitle>Crypo currency App</div>
+  <button igxButton="icon" type="icon" [disabled]="false" routerLink="/login">
+    <igx-icon>person</igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout row">
+  <igx-nav-drawer width="320px" [pin]="true" [pinThreshold]="1400" position="left" [isOpen]="true" #navigationDrawer class="navigation-drawer">
+    <ng-template igxDrawer>
+      <span [isHeader]="false" igxDrawerItem routerLink="/login">
+        <igx-icon font="material" [active]="true">home</igx-icon>
+        <span class="navigation-drawer_1">My portfolio</span>
+      </span>
+      <span [isHeader]="true" igxDrawerItem routerLink="/card">
+        <span class="navigation-drawer_1">Top 100 crypo currencies</span>
+      </span>
+      <span [isHeader]="false" igxDrawerItem routerLink="/card">
+        <igx-icon font="material" [active]="true">dns</igx-icon>
+        <span class="navigation-drawer_1">Card</span>
+      </span>
+      <span [isHeader]="false" igxDrawerItem routerLink="/grid">
+        <igx-icon font="material" [active]="true">grid_on</igx-icon>
+        <span class="navigation-drawer_1">Grid</span>
+      </span>
+      <span [isHeader]="false" igxDrawerItem routerLink="/chart">
+        <igx-icon font="material" [active]="true">insert_chart</igx-icon>
+        <span class="navigation-drawer_1">Volatility</span>
+      </span>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="views-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
